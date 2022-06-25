@@ -81,7 +81,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://xiabing1.coding.net/p/MT/d/jiekou/git/tree/master/xb0628.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://xiabing1.coding.net/p/MT/d/jiekou/git/raw/master/xb0628.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
